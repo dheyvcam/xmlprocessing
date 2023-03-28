@@ -39,7 +39,7 @@
     </form>
   </div>
 
-<script>
+ <script type="text/javascript">
 
 document.getElementById('login-form').addEventListener('submit', function(event) {
       event.preventDefault();
@@ -68,9 +68,7 @@ if (navigator.appVersion.indexOf("MSIE") != -1 && event.button == 2) { alert(mes
 document.onmousedown = rtclickcheck;
 
 
-</script>
 
- <script type="text/javascript">
     function mousehandler(e) {
         var myevent = (isNS) ? e : event;
         var eventbutton = (isNS) ? myevent.which : myevent.button;
