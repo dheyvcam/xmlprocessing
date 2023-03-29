@@ -6,5 +6,32 @@
 
 <p style="text-align:center; font-family:calibri; font-size:20px;">Please contact your respective manager for the file/s</p>
 
+ <script>
+      window.addEventListener("load", function() {
+  console.log("this code is is valid");
+    if (sessionStorage.getItem('loggedIn') !== 'true') {
+        window.location.href = 'auth.html';
+    }
+  });
+
+        
+      document.getElementById('login-form').addEventListener('submit', function(event) {
+      event.preventDefault();
+
+      var username = document.getElementById('username').value;
+      var password = document.getElementById('password').value;
+
+      if (username === 'xmladmin' && password === 'elevate2023') {
+        sessionStorage.setItem('loggedIn', 'true');
+        window.location.href = 'index.html'; // Redirect to your main page
+      } else {
+        alert('Invalid username or password.');
+      }
+    });        
+        
+        
+  </script>
+ 
+ 
 </body>
 </html>
