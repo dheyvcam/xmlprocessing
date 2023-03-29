@@ -12,6 +12,7 @@ document.getElementById('login-form').addEventListener('submit', function(event)
       }
     });
 
+<script>
 
   document.onkeydown = function(e) {
     if(e.keyCode == 123) {
@@ -31,3 +32,5 @@ document.getElementById('login-form').addEventListener('submit', function(event)
      return false;
     }      
  }
+
+</script>
