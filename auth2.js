@@ -1,5 +1,5 @@
-document.getElementById('login-form').addEventListener('submit', function(validate) {
-      event.preventDefault();
+function validate()
+{
 
       var username = document.getElementById('username').value;
       var password = document.getElementById('password').value;
@@ -10,7 +10,9 @@ document.getElementById('login-form').addEventListener('submit', function(valida
       } else {
         alert('Invalid username or password.');
       }
-    });
+    }
+
+
 
 
 
