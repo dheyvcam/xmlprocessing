@@ -5,12 +5,16 @@ function validate()
       var password = document.getElementById('password').value;
 
       if (username === 'xmladmin' && password === 'elevate2023') {
-        sessionStorage.setItem('loggedIn', 'true');
+        alert ("login successfully");
         window.location.href = 'index.html'; // Redirect to your main page
-      } else {
-        alert('Invalid username or password.');
+            return false;
+      } 
+      
+      else {
+        alert("Invalid username or password.");
       }
-    }
+
+}
 
 
 
