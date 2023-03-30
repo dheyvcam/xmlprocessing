@@ -166,14 +166,17 @@ body {
 }
 
 
-
-h1 span {
-  opacity: 0;
-  display: inline-block;
-  animation: animate 1s
-    linear forwards;
-  -webkit-animation: 
-    animate 1s timer forwards;
+.welcome {
+  position: absolute;
+  top:100;
+  left:350;
+  padding: 10px 0;
+  font-size: 16px;
+  color: #fff;
+  pointer-events: none;
+  transition: .5s;
+  font-size: 80px;
+  font-family: Calibri;
 }
 
 .objective {
