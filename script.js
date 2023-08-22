@@ -47,4 +47,7 @@ for (let y = 0; y < subsubtog.length; y++) {
   })
 }
 
-
+$(".option").click(function(){
+   $(".option").removeClass("active");
+   $(this).addClass("active");
+});
