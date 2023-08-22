@@ -508,16 +508,6 @@
 
   </marquee>
 
-  <script>
-      window.addEventListener("load", function() {
-  console.log("this code is is valid");
-    if (sessionStorage.getItem('loggedIn') !== 'true') {
-        window.location.href = 'auth.html';
-    }
-  });
-
-
-
 <div class="options">
    <div class="option active" style="--optionBackground:url(https://66.media.tumblr.com/6fb397d822f4f9f4596dff2085b18f2e/tumblr_nzsvb4p6xS1qho82wo1_1280.jpg);">
       <div class="shadow"></div>
@@ -531,6 +521,8 @@
          </div>
       </div>
    </div>
+
+        
    <div class="option" style="--optionBackground:url(https://66.media.tumblr.com/8b69cdde47aa952e4176b4200052abf4/tumblr_o51p7mFFF21qho82wo1_1280.jpg);">
       <div class="shadow"></div>
       <div class="label">
@@ -547,7 +539,18 @@
    </div>
 
 
-  
+
+
+
+        
+  <script>
+      window.addEventListener("load", function() {
+  console.log("this code is is valid");
+    if (sessionStorage.getItem('loggedIn') !== 'true') {
+        window.location.href = 'auth.html';
+    }
+  });
+
         
   </script>
 
